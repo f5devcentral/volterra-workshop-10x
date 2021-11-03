@@ -84,13 +84,15 @@ Managing Azure resources
 ========================
 There are multiple ways we can create, view, manage and delete Azure resources:
 - Manually
-* Web Portal (https://portal.azure.com)
+
+  * Web Portal (https://portal.azure.com)
     .. image:: ../pictures/lab1/azure_portal.png
       :scale: 50%
       :align: center   
-* az cli (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+  * az cli (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 - Automatically
+
    - from Cloud Templates: Azure Resource Manager (ARM) (https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview)
    - Infrastructure as code (https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
    - Configuration Management (https://docs.microsoft.com/en-us/azure/developer/ansible/overview)
@@ -106,6 +108,7 @@ Topology #1: Single VM accessible from Internet
 **Description**:
 
 This is a simple architecture where we have:
+
 * a single Subscription (i.e. a billing entity in the Azure account)
 * within this subscription we have a Resource Group called **myRG**
 * within the **myRG** Resource Group, we have created a VNET called **myVNET** with an IP Address range of 10.10.0.0/16
