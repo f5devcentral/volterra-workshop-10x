@@ -6,7 +6,7 @@ Lab 1 - Azure Network 101
    :height: 25pt
    :align: right
 
-To make things simple, we will use the F5 demo app (https://github.com/f5devcentral/f5-demo-httpd). This app will display the information we need to test MA (headers ...)
+Here you will find a very basic introduction to the Azure Networking basics and principles.
 
 Azure Networking glossary
 =========================
@@ -84,11 +84,11 @@ Managing Azure resources
 ========================
 There are multiple ways we can create, view, manage and delete Azure resources:
 - Manually
-   - Web Portal (https://portal.azure.com)
+* Web Portal (https://portal.azure.com)
     .. image:: ../pictures/lab1/azure_portal.png
       :scale: 50%
       :align: center   
-   - az cli (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+* az cli (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 - Automatically
    - from Cloud Templates: Azure Resource Manager (ARM) (https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview)
@@ -104,14 +104,16 @@ Azure Architectures
 Topology #1: Single VM accessible from Internet
 -----------------------------------------------
 **Description**:
-this is a simple architecture where we have:
-- a single Subscription (i.e. a billing entity in the Azure account)
-- within this subscription we have a Resource Group called **myRG**
-- within the **myRG** Resource Group, we have created a VNET called **myVNET** with an IP Address range of 10.10.0.0/16
-- **myVNET** VNET has only a single subnet having an IP address space 10.10.0.0/24 included in the VNET IP Address space.
-- On **mySubnet** we create a *vNIC* with an IP Address dynamically assigned on the 10.10.0.0/24
-- In **myVNET** we deploy an Ubuntu **myVM** from the Azure Marketplace on a DS2_V3 instance type. **myVM** is associated with **myVNIC** network interface.
-- We have two NSGs for network filtering:
+
+This is a simple architecture where we have:
+* a single Subscription (i.e. a billing entity in the Azure account)
+* within this subscription we have a Resource Group called **myRG**
+* within the **myRG** Resource Group, we have created a VNET called **myVNET** with an IP Address range of 10.10.0.0/16
+* **myVNET** VNET has only a single subnet having an IP address space 10.10.0.0/24 included in the VNET IP Address space.
+* On **mySubnet** we create a *vNIC* with an IP Address dynamically assigned on the 10.10.0.0/24
+* In **myVNET** we deploy an Ubuntu **myVM** from the Azure Marketplace on a DS2_V3 instance type. **myVM** is associated with **myVNIC** network interface.
+* We have two NSGs for network filtering:
+
   - at the subnet level where We allow all traffic from a known Public IP address (100.200.10.20/32)
   - at the NIC level where We have a more granular control and allow only HTTPS and SSH.
 
