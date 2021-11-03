@@ -1,5 +1,5 @@
-F5 BIG-IP MA Lab
-================
+Volterra Workshop
+=================
 
 Welcome
 -------
