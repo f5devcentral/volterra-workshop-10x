@@ -1,30 +1,55 @@
-# Solutions Engineering Template Repository
-A template repository that contains all required files (LICENSE, SUPPORT, CONTRIBUTING, etc) as outlined in the org standards.  
-
-
-The sections below are recommended in your project's README.md file. 
+# Volterra Workshop 101
+Volterra Workshop 101 for F5ers, partners and customers.
 
 ## Overview
-Provide a short overview of the project.
+Volterra Workshop 101 for F5ers, Partners and customers. This workshop is different from the Volterra 101 labs. It will be split in different sub-labs including K8S workshop and Public Cloud Networking 101.
 
-## Getting Started
-Provide a quick example of how to use your code.  This should provide the user with a launch point to quickly see what the project can offer them. 
+---
 
-## Installation
-Outline the requirements and steps to install this project. 
+## The Plan
 
-## Usage
-Outline how the user can use your project and the various features the project offers. 
+* Per region with one local Volterra Lead
+* Will be split in different session so that students can take advantage of each session, and move forward step by step
 
-## Development
-Outline any requirements to setup a development environment if someone would like to contribute.  You may also link to another file for this information. 
+### k8s 201
+
+* Deploy a modern app in Azure AKS
+* SE deployed apps in k8S in Q3, now let's do it in a public cloud
+* Understand how an app is publish in an AKS (ingress + LB)
+
+### Volterra 101
+
+* Use case #1 - publish a public app through Volterra Global Network (understood by the field on last Monday)
+* Use case #2 - publish a private app running in the AKS on the Votlerra Global Network --> Voltconsole
+  
+  * Azure Networking 101
+  * Understand how AKS/EKS/GKS publish apps on vnet/vpc
+  * Deploy a VoltMesh on the same vnet
+  * Create the LB + OP
+  * Understand the workflow
+
+* Take Away --> create your Terraform plan with all the settings used in the previous steps.
+
+  * Keep this plan for the next workshop (2 weeks later)
+  * DELETE the Volterra environment and keep the AKS up and runnning
+
+### Volterra 102 - 2 weeks later
+
+* Use case #4
+
+  * Re-deploy the same Volterra environment with the Terraform
+  * Lift and shift one service to AWS
+    * AWS networking 101
+    * TGW vs VPC
+  * Understand Volterra MCN
+
+---
 
 ## Support
 For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).
 
 ## Community Code of Conduct
 Please refer to the [F5 DevCentral Community Code of Conduct](code_of_conduct.md).
-
 
 ## License
 [Apache License 2.0](LICENSE)
