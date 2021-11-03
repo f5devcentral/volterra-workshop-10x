@@ -1,5 +1,5 @@
-Expose the private appplication
-###############################
+Lab 3 - Expose the private appplication
+#######################################
 
 Create and deploy the Volterra Node in Azure
 ********************************************

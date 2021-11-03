@@ -1,5 +1,5 @@
-Expose the public application
-#############################
+Lab 2 - Expose the public application
+#####################################
 
 The application used in the lab
 *******************************

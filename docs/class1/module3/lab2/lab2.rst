@@ -1,5 +1,5 @@
-Create an Azure Site
-####################
+Lab 2 - Create an Azure Site
+############################
 
 Create and deploy the Volterra Node in Azure
 ********************************************

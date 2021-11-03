@@ -1,5 +1,5 @@
-Architecture of the lab
-#######################
+Lab 1 - Architecture of the lab
+###############################
 
 The application used in the lab
 *******************************
