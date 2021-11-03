@@ -14,7 +14,7 @@
   <meta name="title" content="Architecture of the lab"/>
   <meta name="product" content="Workshop Volterra 10x"/>
   <meta name="version" content=""/>
-  <meta name="updated_date"  content="2021-11-03 17:20:47"/>
+  <meta name="updated_date"  content="2021-11-03 17:42:20"/>
   <meta name="archived" content="Archived documents excluded"/>
   <meta name="doc_type" content="Manual"/>
   <meta name="lifecycle" content="release"/>
@@ -56,8 +56,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Module 2 - K8S 201" href="../../module2/module2.html" />
-    <link rel="prev" title="Module 1 - Use Case 1 - Publish public application" href="../module1.html" /> 
+    <link rel="next" title="Expose the application" href="../lab2/lab2.html" />
+    <link rel="prev" title="Module 1 - Use Case 1 - Expose public application" href="../module1.html" /> 
   </head><body>
   <div id="clouddocs-header"></div>
 
@@ -96,8 +96,9 @@
             <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../class1.html">Class1 - Volterra Workshop 101</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../module1.html">Module 1 - Use Case 1 - Publish public application</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../module1.html">Module 1 - Use Case 1 - Expose public application</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Architecture of the lab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lab2/lab2.html">Expose the application</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../module2/module2.html">Module 2 - K8S 201</a></li>
@@ -124,7 +125,10 @@
             <ul>
 <li><a class="reference internal" href="#">Architecture of the lab</a><ul>
 <li><a class="reference internal" href="#the-application-used-in-the-lab">The application used in the lab</a></li>
-<li><a class="reference internal" href="#the-lab-architecture">The lab architecture</a></li>
+<li><a class="reference internal" href="#the-lab-architecture">The lab architecture</a><ul>
+<li><a class="reference internal" href="#terminology">Terminology</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -144,7 +148,7 @@
         <h5>
             <a href="../../../index.html">Workshop Volterra 10x</a>
               &gt; <a href="../../class1.html">Class1 - Volterra Workshop 101</a>
-              &gt; <a href="../module1.html">Module 1 - Use Case 1 - Publish public application</a>
+              &gt; <a href="../module1.html">Module 1 - Use Case 1 - Expose public application</a>
 
           <span class="right">
              <a href="../../../_sources/class1/module1/lab1/lab1.rst.txt" rel="nofollow">Source</a> |
@@ -182,10 +186,23 @@
 </div>
 <div class="section" id="the-lab-architecture">
 <h2>The lab architecture<a class="headerlink" href="#the-lab-architecture" title="Permalink to this headline">¶</a></h2>
+<p>As you can notice in the chart below, the Sentence application is running in our own datacenter, and is already available on internet (<a class="reference external" href="http://sentence.emea.f5se.com">http://sentence.emea.f5se.com</a>)
+We will expose this application on the Volterra Global Network by configuring the following VoltConsole components:</p>
+<ul class="simple">
+<li>Origin Pool</li>
+<li>HTTP Load Balancer</li>
+</ul>
+<div class="section" id="terminology">
+<h3>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h3>
+<p><strong>HTTP Load Balancer</strong>
+Volterra’s reverse proxy and HTTP load balancer concepts allow for flow control of application and API traffic between services, to the internet, and from clients on the internet. HTTP Load Balancers allow for steering decisions based on URI or other HTTP based criteria.</p>
+<p><strong>Origin Pool</strong>
+An origin pool is a mechanism to configure a set of application endpoints grouped together into a resource pool. These endpoints could be IP:port tuples within a give site or a service discovered by one of Volterra’s many service discovery methods. These objects will be used the next step.</p>
 <img alt="../../../_images/lab1-archi.png" class="align-center" src="../../../_images/lab1-archi.png" />
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The goal is to publish this application through the Volterra Global Network</p>
+<p class="last">The goal is to publish this application through the Volterra Global Network so people all over the world can reach the closest Votlerra RE.</p>
+</div>
 </div>
 </div>
 </div>
@@ -196,10 +213,10 @@
      <div class="row next-prev-btn-row">
        <div class="col-lg-12">
        
-        <a href="../module1.html" title="Module 1 - Use Case 1 - Publish public application" accesskey="p" class="btn btn-primary left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
+        <a href="../module1.html" title="Module 1 - Use Case 1 - Expose public application" accesskey="p" class="btn btn-primary left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
        
        
-          <a href="../../module2/module2.html" title="Module 2 - K8S 201" accesskey="n" class="btn btn-primary right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+          <a href="../lab2/lab2.html" title="Expose the application" accesskey="n" class="btn btn-primary right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
        
      </div>
      </div>
