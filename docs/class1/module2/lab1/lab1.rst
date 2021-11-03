@@ -87,8 +87,7 @@ There are multiple ways we can create, view, manage and delete Azure resources:
    - Web Portal (https://portal.azure.com)
     .. image:: ../pictures/lab1/azure_portal.png
       :scale: 50%
-      :align: center
-   
+      :align: center   
    - az cli (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 - Automatically
@@ -105,16 +104,16 @@ Azure Architectures
 Topology #1: Single VM accessible from Internet
 -----------------------------------------------
 **Description**:
-   this is a simple architecture where we have:
-   - a single Subscription (i.e. a billing entity in the Azure account)
-   - within this subscription we have a Resource Group called **myRG**
-   - within the **myRG** Resource Group, we have created a VNET called **myVNET** with an IP Address range of 10.10.0.0/16
-   - **myVNET** VNET has only a single subnet having an IP address space 10.10.0.0/24 included in the VNET IP Address space.
-   - On **mySubnet** we create a *vNIC* with an IP Address dynamically assigned on the 10.10.0.0/24
-   - In **myVNET** we deploy an Ubuntu **myVM** from the Azure Marketplace on a DS2_V3 instance type. **myVM** is associated with **myVNIC** network interface.
-   - We have two NSGs for network filtering:
-      - at the subnet level where We allow all traffic from a known Public IP address (100.200.10.20/32)
-      - at the NIC level where We have a more granular control and allow only HTTPS and SSH.
+this is a simple architecture where we have:
+- a single Subscription (i.e. a billing entity in the Azure account)
+- within this subscription we have a Resource Group called **myRG**
+- within the **myRG** Resource Group, we have created a VNET called **myVNET** with an IP Address range of 10.10.0.0/16
+- **myVNET** VNET has only a single subnet having an IP address space 10.10.0.0/24 included in the VNET IP Address space.
+- On **mySubnet** we create a *vNIC* with an IP Address dynamically assigned on the 10.10.0.0/24
+- In **myVNET** we deploy an Ubuntu **myVM** from the Azure Marketplace on a DS2_V3 instance type. **myVM** is associated with **myVNIC** network interface.
+- We have two NSGs for network filtering:
+  - at the subnet level where We allow all traffic from a known Public IP address (100.200.10.20/32)
+  - at the NIC level where We have a more granular control and allow only HTTPS and SSH.
 
 
 **Architecture**:
