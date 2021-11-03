@@ -47,7 +47,7 @@ Azure Networking glossary
 |                |                                     |https://azure.microsoft.com/en-us/global-infrastructure/geographies/                    |
 +----------------+-------------------------------------+----------------------------------------------------------------------------------------+
 |                |        Availability Set (AS)        |A Region is composed of multiple Azure Datacenters ensuring geographic redundancy       |
-|                |                                     | 
+|                |                                     |                                                                                        |
 +----------------+-------------------------------------+----------------------------------------------------------------------------------------+
 |      |rg|      |         Resource Group (RG)         |These are logical group to view and manage a set of resources (compute, storage,        |
 |                |                                     |networking...) reflecting a sub-organization, a group of applications...                |
