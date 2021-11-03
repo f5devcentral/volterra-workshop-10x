@@ -1,8 +1,8 @@
-# Volterra Workshop 101
-Volterra Workshop 101 for F5ers, partners and customers.
+# Volterra Workshop 10x
+Volterra Workshop 10x for F5ers, partners and customers.
 
 ## Overview
-Volterra Workshop 101 for F5ers, Partners and customers. This workshop is different from the Volterra 101 labs. It will be split in different sub-labs including K8S workshop and Public Cloud Networking 101.
+Volterra Workshop 10x for F5ers, Partners and customers. This workshop is different from the Volterra 101 labs. It will be split in different sub-labs including K8S workshop and Public Cloud Networking 101.
 
 ---
 
