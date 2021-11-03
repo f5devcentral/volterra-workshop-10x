@@ -15,7 +15,7 @@ Lab Maintainers:
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :glob:
 
    module*/module*
