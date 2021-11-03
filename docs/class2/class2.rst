@@ -1,4 +1,4 @@
-Class1 - Volterra Workshop 101
+Class2 - Volterra Workshop 102
 ##############################
 
 UDF Lab Maintainers:
@@ -9,7 +9,7 @@ UDF Lab Maintainers:
 
 |
    
-.. note:: Welcome to Volterra Workshop 101 lab guide
+.. note:: Welcome to Volterra Workshop 102 lab guide
 
 
 .. toctree::

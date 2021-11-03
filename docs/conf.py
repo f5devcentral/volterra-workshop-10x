@@ -5,10 +5,10 @@
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = "F5 BIG-IP Modular Architecture Lab"
+classname = "Workshop Volterra 10x"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_repo = "https://github.com/f5devcentral/f5-big-ip-ma-lab"
+github_repo = "https://github.com/f5devcentral/volterra-workshop-10x"
 
 #
 # END CONFIG

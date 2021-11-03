@@ -1,18 +1,15 @@
-Class1 - BIG-IP MA
-##################
+Class1 - Volterra Workshop 101
+##############################
 
 UDF Lab Maintainers:
 
-   Matthieu Dierick <m.dierick@f5.com>
+  Matthieu Dierick <m.dierick@f5.com>
 
-   Roman Jouhannet <r.jouhannet@f5.com>
+  Fouad Chmainy <f.chmainy@f5.com>
 
-   Jason Wilburn <j.wilburn@f5.comw>
-   
-   Alfredo Vistola
 |
    
-.. note:: Welcome to modular BIG-IP Trusted Access (APM) lab guide
+.. note:: Welcome to Volterra Workshop 101 lab guide
 
 
 .. toctree::
