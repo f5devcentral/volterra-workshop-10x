@@ -1,12 +1,40 @@
 Lab 1 - Azure Network 101
 #########################
 
+ .. image:: ../pictures/lab1/Azure.png
+   :scale: 20%
+   :align: right
+
 To make things simple, we will use the F5 demo app (https://github.com/f5devcentral/f5-demo-httpd). This app will display the information we need to test MA (headers ...)
 
 Azure Networking glossary
 =========================
 
-.. |subscription| image:: ../images/subscription.png
+.. |subscription| image:: ../pictures/lab1/subscription.png
+   :width: 20pt
+   :height: 20pt
+.. |region| image:: ../pictures/lab1/subscription.png
+   :width: 20pt
+   :height: 20pt
+.. |as| image:: ../pictures/lab1/subscription.png
+   :width: 20pt
+   :height: 20pt
+.. |rg| image:: ../pictures/lab1/subscription.png
+   :width: 20pt
+   :height: 20pt
+.. |vnet| image:: ../pictures/lab1/vnet.png
+   :width: 20pt
+   :height: 20pt
+.. |subnet| image:: ../pictures/lab1/subscription.png
+   :width: 20pt
+   :height: 20pt
+.. |vm| image:: ../pictures/lab1/vm.png
+   :width: 20pt
+   :height: 20pt
+.. |vnic| image:: ../pictures/lab1/vnic.png
+   :width: 20pt
+   :height: 20pt
+.. |nsg| image:: ../pictures/lab1/nsg.png
    :width: 20pt
    :height: 20pt
 
@@ -18,7 +46,7 @@ Azure Networking glossary
 +================+===================+==========================================================================================================+
 | |subscription| +     Subscription   +  Within an Azure account (or tenant), Azure subscriptions are billing containers.                       |
 +----------------+-------------------+----------------------------------------------------------------------------------------------------------+
-|    |Region|.   +       Region.        +  Every resources in Azure are deployed in a geographical location or Region (US-East, West-Europe...) |
+|    |region|.   +       Region.        +  Every resources in Azure are deployed in a geographical location or Region (US-East, West-Europe...) |
 +----------------+-------------------+----------------------------------------------------------------------------------------------------------+
 |      |as|      +   Availability Set (AS)   +  A Region is composed of multiple Azure Datacenters ensuring geographic redundancy               |
 +----------------+-------------------+----------------------------------------------------------------------------------------------------------+
