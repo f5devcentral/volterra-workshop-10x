@@ -2,7 +2,8 @@ Lab 1 - Azure Network 101
 #########################
 
  .. image:: ../pictures/lab1/azure.png
-   :scale: 20%
+   :width: 10pt
+   :height: 10pt
    :align: right
 
 To make things simple, we will use the F5 demo app (https://github.com/f5devcentral/f5-demo-httpd). This app will display the information we need to test MA (headers ...)
