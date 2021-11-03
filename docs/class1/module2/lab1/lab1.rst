@@ -85,11 +85,13 @@ Managing Azure resources
 There are multiple ways we can create, view, manage and delete Azure resources:
 - Manually
 
-  * Web Portal (https://portal.azure.com)
+  - Web Portal (https://portal.azure.com)
+  
     .. image:: ../pictures/lab1/azure_portal.png
       :scale: 50%
       :align: center   
-  * az cli (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+  
+  - az cli (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 - Automatically
 
@@ -122,12 +124,14 @@ This is a simple architecture where we have:
 
 
 **Architecture**:
-    .. image:: ../pictures/lab1/topology1.png
-      :scale: 50%
-      :align: center
+
+.. image:: ../pictures/lab1/topology1.png
+  :scale: 50%
+  :align: center
       
 
 **Terraform components**:
+
 For your information, here is the corresponding terraform declaration. Please note the implicit references and dependencies between resources.
 
 
