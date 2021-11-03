@@ -60,9 +60,9 @@ Azure Networking glossary
 |                |                                     |VNET can be connected together via **VNET peering** (same region) or.                   |
 |                |                                     |**Global VNET Peering** across regions.                                                 |
 +----------------+-------------------------------------+----------------------------------------------------------------------------------------+
-|    |subnet|    |              Subnet                 |A VNET can contain one or multiple subnets within the specified address range           |
+|    |subnet|    |             Subnet                  |A VNET can contain one or multiple subnets within the specified address range           |
 |                |                                     |(ex. subnet external - 10.10.100.0/24, subnet internal - 10.10.200.0/24,                |
-|                |.                                    |management - 10.10.0.0/24)                                                              |
+|                |                                     |management - 10.10.0.0/24)                                                              |
 +----------------+-------------------------------------+----------------------------------------------------------------------------------------+
 |      |vm|      |        Virtual Machine (VM)         |a VM or instance are defined by a VM family depending on its required amount of CPU and |
 |                |                                     |RAM (B series, DS Series...), based on an image (private or from the market place) and  |
