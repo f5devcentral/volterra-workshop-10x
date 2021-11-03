@@ -42,27 +42,28 @@ Azure Networking glossary
 
 
 
-+----------------+-------------------+----------------------------------------------------------------------------------------------------------+
-|      icon.     +       item.        +                                   description                                                           |
-+================+===================+==========================================================================================================+
-| |subscription| +     Subscription   +  Within an Azure account (or tenant), Azure subscriptions are billing containers.                       |
-+----------------+-------------------+----------------------------------------------------------------------------------------------------------+
-|    |region|.   +       Region.        +  Every resources in Azure are deployed in a geographical location or Region (US-East, West-Europe...) |
-+----------------+-------------------+----------------------------------------------------------------------------------------------------------+
-|      |as|      +   Availability Set (AS)   +  A Region is composed of multiple Azure Datacenters ensuring geographic redundancy               |
-+----------------+-------------------+----------------------------------------------------------------------------------------------------------+
-|      |rg|      +   Resource Group (RG)   +  Within an Azure account (or tenant), Azure subscriptions are billing containers.                  |
-+----------------+-------------------+----------------------------------------------------------------------------------------------------------+
-|     |vnet|     +   Virtual Network (VNET)   +  Within an Azure account (or tenant), Azure subscriptions are billing containers.               |
-+----------------+-------------------+----------------------------------------------------------------------------------------------------------+
-|    |subnet|    +   Subnet          +  A VNET contains multiple subnets within the specified address range (ex. subnet external - 10.10.100.0/24, subnet internal - 10.10.200.0/24, management - 10.10.0.0/24)                  |
-+----------------+-------------------+----------------------------------------------------------------------------------------------------------+
-|      |vm|      +   Virtual Machine (VM)   +  Within an Azure account (or tenant), Azure subscriptions are billing containers. |
-+----------------+-------------------+----------------------------------------------------------------------------------------------------------+
-|     |vnic|     +   Virtual Network Interface (VNIC)  +  Within an Azure account (or tenant), Azure subscriptions are billing containers. |
-+----------------+-------------------+----------------------------------------------------------------------------------------------------------+
-|      |nsg|     +   Network Security Group (NSG)   +  Within an Azure account (or tenant), Azure subscriptions are billing containers. |
-+----------------+-------------------+----------------------------------------------------------------------------------------------------------+
++----------------+-------------------------------------+----------------------------------------------------------------------------------------+
+|      icon.     |              item.                  |                                   description                                          |
++================+=====================================+========================================================================================+
+| |subscription| |           Subscription              +  Within an Azure account (or tenant), Azure subscriptions are billing containers.      |
++----------------+-------------------------------------+----------------------------------------------------------------------------------------+
+|    |region|.   |              Region                 |  Every resources in Azure are deployed in a geographical location                      |
+|                |                                     | or Region (US-East, West-Europe...)                                                    |
++----------------+-------------------------------------+----------------------------------------------------------------------------------------+
+|      |as|      |        Availability Set (AS)        |  A Region is composed of multiple Azure Datacenters ensuring geographic redundancy     |
++----------------+-------------------------------------+----------------------------------------------------------------------------------------+
+|      |rg|      |         Resource Group (RG)         |  Within an Azure account (or tenant), Azure subscriptions are billing containers.      |
++----------------+-------------------------------------+----------------------------------------------------------------------------------------+
+|     |vnet|     |       Virtual Network (VNET)        |  Within an Azure account (or tenant), Azure subscriptions are billing containers.      |
++----------------+-------------------------------------+----------------------------------------------------------------------------------------+
+|    |subnet|    |              Subnet                 |  A VNET contains multiple subnets within the specified address range                   |
++----------------+-------------------------------------+----------------------------------------------------------------------------------------+
+|      |vm|      |        Virtual Machine (VM)         |  Within an Azure account (or tenant), Azure subscriptions are billing containers.      |
++----------------+-------------------------------------+----------------------------------------------------------------------------------------+
+|     |vnic|     |   Virtual Network Interface (VNIC)  |  Within an Azure account (or tenant), Azure subscriptions are billing containers.      |
++----------------+-------------------------------------+----------------------------------------------------------------------------------------+
+|      |nsg|     |     Network Security Group (NSG)    |  Within an Azure account (or tenant), Azure subscriptions are billing containers.      |
++----------------+-------------------------------------+----------------------------------------------------------------------------------------+
 
 
 
