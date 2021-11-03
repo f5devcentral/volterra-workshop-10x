@@ -8,7 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      S3_DIR: training/community/big-ip-ma-lab/html
+      S3_DIR: training/community/volterra-workshop/html
 
     steps:
     - uses: actions/checkout@v2
