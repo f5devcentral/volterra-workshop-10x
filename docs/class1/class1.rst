@@ -1,11 +1,13 @@
 Class1 - Volterra Workshop 101
 ##############################
 
-UDF Lab Maintainers:
+Lab Maintainers:
 
   Matthieu Dierick <m.dierick@f5.com>
 
   Fouad Chmainy <f.chmainy@f5.com>
+
+  Anton Gyllenhammar <a.gyllenhammar@f5.com>
 
 |
    

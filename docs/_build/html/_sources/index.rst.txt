@@ -14,7 +14,7 @@ We will cover:
 * Volterra 101 (single datacenter - cloud provider)
 * K8S 201 (following K8S 101 done for F5ers in 2021)
 * Terraform 101
-* Votlerra 102 (multi cloud networking)
+* Volterra 102 (multi cloud networking)
 
 .. toctree::
    :maxdepth: 3
