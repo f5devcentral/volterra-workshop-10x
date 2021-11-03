@@ -40,10 +40,10 @@ Azure Networking glossary
 +----------------+-------------------------------------+----------------------------------------------------------------------------------------+
 |      icon.     |              item.                  |                                   description                                          |
 +================+=====================================+========================================================================================+
-| |subscription| |           Subscription              +  Within an Azure account (or tenant), Azure subscriptions are billing containers.      |
+| |subscription| |           Subscription              | Within an Azure account (or tenant), Azure subscriptions are billing containers.       |
 +----------------+-------------------------------------+----------------------------------------------------------------------------------------+
-|                |              Region                 | Every resources in Azure are deployed in a geographical location                       |
-|                |                                     | or Region (US-East, West-Europe...)                                                    |
+|                |              Region                 |Every resources in Azure are deployed in a geographical location                        |
+|                |                                     |or Region (US-East, West-Europe...)                                                     |
 |                |                                     |https://azure.microsoft.com/en-us/global-infrastructure/geographies/                    |
 +----------------+-------------------------------------+----------------------------------------------------------------------------------------+
 |                |        Availability Set (AS)        |A Region is composed of multiple Azure Datacenters ensuring geographic redundancy       |
@@ -80,37 +80,51 @@ Azure Networking glossary
 
 
 
+Managing Azure resources
+========================
+There are multiple ways we can create, view, manage and delete Azure resources:
+- Manually
+   - Web Portal (https://portal.azure.com)
+    .. image:: ../pictures/lab1/azure_portal.png
+      :scale: 50%
+      :align: center
+   
+   - az cli (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+
+- Automatically
+   - from Cloud Templates: Azure Resource Manager (ARM) (https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview)
+   - Infrastructure as code (https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+   - Configuration Management (https://docs.microsoft.com/en-us/azure/developer/ansible/overview)
+   
 
 
 
-
-
-
-
-
-
-
-
-
-
-Pre-requisites:
-portal.azure.com
-
-az cli
-installation
-how to us it?
 
 Azure Architectures
 ===================
 Topology #1: Single VM accessible from Internet
 -----------------------------------------------
-Description:
+**Description**:
+   this is a simple architecture where we have:
+   - a single Subscription (i.e. a billing entity in the Azure account)
+   - within this subscription we have a Resource Group called **myRG**
+   - within the **myRG** Resource Group, we have created a VNET called **myVNET** with an IP Address range of 10.10.0.0/16
+   - **myVNET** VNET has only a single subnet having an IP address space 10.10.0.0/24 included in the VNET IP Address space.
+   - On **mySubnet** we create a *vNIC* with an IP Address dynamically assigned on the 10.10.0.0/24
+   - In **myVNET** we deploy an Ubuntu **myVM** from the Azure Marketplace on a DS2_V3 instance type. **myVM** is associated with **myVNIC** network interface.
+   - We have two NSGs for network filtering:
+      - at the subnet level where We allow all traffic from a known Public IP address (100.200.10.20/32)
+      - at the NIC level where We have a more granular control and allow only HTTPS and SSH.
 
-Architecture:
 
-Componnents:
+**Architecture**:
+    .. image:: ../pictures/lab1/topology1.png
+      :scale: 50%
+      :align: center
+      
 
-Terraform components:
+**Terraform components**:
+For your information, here is the corresponding terraform declaration. Please note the implicit references and dependencies between resources.
 
 
 Topology #2: Hub & Spoke Architecture
