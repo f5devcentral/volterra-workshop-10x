@@ -1,7 +1,7 @@
 Lab 1 - Azure Network 101
 #########################
 
- .. image:: ../pictures/lab1/Azure.png
+ .. image:: ../pictures/lab1/azure.png
    :scale: 20%
    :align: right
 
