@@ -83,6 +83,7 @@ Azure Networking glossary
 Managing Azure resources
 ========================
 There are multiple ways we can create, view, manage and delete Azure resources:
+
 - Manually
 
   - Web Portal (https://portal.azure.com)
