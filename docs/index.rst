@@ -4,6 +4,8 @@ Volterra Workshop
 Welcome
 -------
 
+.. warning:: Workshop under construction
+
 Welcome to the |classbold| - |year|
 
 |repoinfo|
