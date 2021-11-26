@@ -1,5 +1,5 @@
-Class1 - Volterra Workshop 101 - under construction
-###################################################
+Class1 - Volterra Workshop for Specialists
+##########################################
 
 Lab Maintainers:
 
@@ -11,8 +11,6 @@ Lab Maintainers:
 
 |
    
-.. note:: Welcome to Volterra Workshop 101 lab guide
-
 
 .. toctree::
    :maxdepth: 2
