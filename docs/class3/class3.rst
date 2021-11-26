@@ -1,4 +1,4 @@
-Class1 - Volterra Workshop for Specialists
+Class3 - Volterra Workshop for Specialists
 ##########################################
 
 Lab Maintainers:
