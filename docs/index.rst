@@ -17,6 +17,7 @@ We will cover:
 * K8S 201 (following K8S 101 done for F5ers in 2021)
 * Terraform 101
 * Volterra 102 (multi cloud networking)
+* Volterra for Specialists
 
 .. toctree::
    :maxdepth: 3

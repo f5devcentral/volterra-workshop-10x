@@ -47,6 +47,12 @@ Volterra Workshop 10x for F5ers, Partners and customers. This workshop is differ
 
 ---
 
+## Dedicated workshop for F5 F5 Distributed Cloud Specialists
+
+This section is used by F5 Specialists to create a MultiCloud infrastructure and demo in their own environments.
+
+---
+
 ## Support
 For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).
 
