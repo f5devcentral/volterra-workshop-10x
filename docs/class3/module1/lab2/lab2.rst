@@ -95,6 +95,7 @@ Discover the services
 
 * Create a service discovery
   * Select your site, upload your kubeconfig file
+  * Don't forget to publish full FQDN to VIP
 
   .. image:: ../pictures/lab2/sd.png
      :align: center

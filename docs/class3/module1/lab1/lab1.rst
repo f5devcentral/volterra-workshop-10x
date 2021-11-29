@@ -47,3 +47,10 @@ The Frontend microservice will ``display`` the words in a sentence.
 
 .. image:: ../pictures/lab1/lab1-app2.png
    :align: center
+
+|
+
+Deploy UDF Blueprint
+********************
+
+Deploy UDF blueprint ``Volterra Specialist Workshop`` right now.
