@@ -6,3 +6,4 @@ docs/errors.txt
 .vscode
 labs-content/class3/terraform/kubeconfig-dierick-se
 labs-content/class3/terraform/.terraform
+labs-content/class3/terraform/terraform.tfstate
