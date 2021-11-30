@@ -35,9 +35,13 @@ Discover the Colors service
 ***************************
 
 * Create a service discovery
+  
   * Select your site, upload the kubeconfig file from the jumphost (/.kube/config)
-  * Select Site Local Network as the k8s API is on 10.1.1.x/24 network.
+  * Select ``Site Local Network`` as the k8s API is on 10.1.1.x/24 network.
   * Don't forget to publish full FQDN to VIP
+
+  .. image:: ../pictures/lab3/sd.png
+     :align: center
 
 * You should see ``Colors`` service as a NodePort
 
@@ -48,7 +52,51 @@ Expose the microservice with F5 Distributed Cloud
 *************************************************
 
 * Create an Origin Pool targeting the discovered service
-* Create an Internal LB, so that the Generator can reach the Colors service
-  * FYI, the generator targets this fqdn ``sentence-colors.default``
+  
+  * Type k8s service
+  * Service name : the service name discovered
+  * Site : your UDF site
+  * Tip : Select Outside Network
+  
+  .. image:: ../pictures/lab3/op.png
+   :align: center
 
-.. note :: Test your deployment
+* Create an Internal LB, so that the Generator can reach the Colors service
+  
+  * FYI, the generator targets this fqdn ``sentence-colors.default``
+  * Publish this LB on the Azure Site so that the AKS is updated with a new service ``sentence-colors.default``
+  * Check you AKS services
+
+  .. image:: ../pictures/lab3/lb.png
+     :align: center
+
+  .. code-block:: console
+
+    ❯ kubectl get services
+    NAME                      TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+    kubernetes                ClusterIP   10.0.0.1       <none>        443/TCP        4h25m
+    sentence-adjectives       ClusterIP   10.0.250.106   <none>        80/TCP         4h19m
+    sentence-animals          ClusterIP   10.0.14.187    <none>        80/TCP         4h19m
+    sentence-backgrounds      ClusterIP   10.0.52.39     <none>        80/TCP         4h19m
+    sentence-colors           ClusterIP   None           <none>        80/TCP         10m
+    sentence-frontend-nginx   NodePort    10.0.61.130    <none>        80:30202/TCP   4h19m
+    sentence-generator        ClusterIP   10.0.16.217    <none>        80/TCP         4h19m
+    sentence-locations        ClusterIP   10.0.59.8      <none>        80/TCP         4h19m
+    
+    ❯ kubectl describe svc sentence-colors
+    Name:              sentence-colors
+    Namespace:         default
+    Labels:            <none>
+    Annotations:       ves.io/discoveryCreator: 16d81643-3f37-4d6d-8009-8fa82d95484b
+    Selector:          <none>
+    Type:              ClusterIP
+    IP Families:       <none>
+    IP:                None
+    IPs:               None
+    Port:              80  80/TCP
+    TargetPort:        80/TCP
+    Endpoints:         10.240.0.6:80
+    Session Affinity:  None
+    Events:            <none>
+
+.. note :: As you can notice, Volterra added a new service ``sentence-colors.default`` in AKS so that AKS knows this service is exposed by the Volterra Node (10.240.0.6). This LB routes traffic to the Origin Pool in UDF.
