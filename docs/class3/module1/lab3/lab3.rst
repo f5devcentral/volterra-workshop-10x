@@ -5,17 +5,20 @@ Lab 3 - Deploy Colors microservice on premises and expose it
    :align: center
 
 |
+
 Deploy Colors on private on-premises AKS
 ****************************************
 
 * Connect to ``Jumphost`` and run the Colors microservice manifest to deploy it into the private k8S.
 
   .. code-block:: terminal
+
       kubectk apply -f /home/ubuntu/k8s-deployment/aks-sentence-colors.yaml
 
-.. note:: As you can notice, the Colors microservice is pushed as a NodePort
+.. note:: As you can notice, the Colors microservice is published as a NodePort
 
 |
+
 Configure the private VolteNode in UDF
 **************************************
 
@@ -31,29 +34,31 @@ Configure the private VolteNode in UDF
 .. warning:: If nothing happens when you click SAVE, open the browser console, and check the error. Looks like there is a UI bug, and you need to check the box ``IP Settings Configuration``.
 
 |
+
 Discover the Colors service
 ***************************
 
 * Create a service discovery
   
   * Select your site, upload the kubeconfig file from the jumphost (/.kube/config)
-  * Select ``Site Local Network`` as the k8s API is on 10.1.1.x/24 network.
-  * Don't forget to publish full FQDN to VIP
+  * Select ``Site Local Network`` because the k8s API is on 10.1.1.x/24 network.
+  * Don't forget to ``publish full FQDN to VIP``
 
   .. image:: ../pictures/lab3/sd.png
      :align: center
 
-* You should see ``Colors`` service as a NodePort
+* You should see ``Colors`` service as a NodePort in the discovered services.
 
 .. note:: This can take several minutes to discover services.
 
 |
+
 Expose the microservice with F5 Distributed Cloud
 *************************************************
 
 * Create an Origin Pool targeting the discovered service
   
-  * Type k8s service
+  * Type ``k8s service``
   * Service name : the service name discovered
   * Site : your UDF site
   * Tip : Select Outside Network
