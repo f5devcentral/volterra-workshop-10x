@@ -76,6 +76,7 @@ Expose the microservice with F5 Distributed Cloud
      :align: center
 
   .. code-block:: console
+    :emphasize-lines: 7, 24
 
     ❯ kubectl get services
     NAME                      TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
