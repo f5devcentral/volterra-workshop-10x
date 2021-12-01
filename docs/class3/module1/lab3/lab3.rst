@@ -33,6 +33,10 @@ Configure the private VolteNode in UDF
 
 .. warning:: If nothing happens when you click SAVE, open the browser console, and check the error. Looks like there is a UI bug, and you need to check the box ``IP Settings Configuration``.
 
+* Come back to VoltConsole, and accept the registration. Add some coordonates (the ones you want)
+
+.. note:: Wait for the node to be GREEN, upgrade the node if required.
+
 |
 
 Discover the Colors service
