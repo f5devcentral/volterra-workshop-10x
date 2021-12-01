@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: frontend-nginx
-          image: registry.gitlab.com/sentence-app/frontend:dev
+          image: registry.gitlab.com/sentence-app/frontend:v2
           imagePullPolicy: Always
           ports:
             - containerPort: 80
