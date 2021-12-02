@@ -16,7 +16,7 @@ spec:
           image: registry.gitlab.com/sentence-app/generator:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           env:
             - name: PREFIX
               value: "sentence"
@@ -41,7 +41,7 @@ spec:
   ports:
     - name: http
       port: 80
-      targetPort: 80
+      targetPort: 8080
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -196,7 +196,7 @@ spec:
           image: registry.gitlab.com/sentence-app/backgrounds:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           env:
             - name: PREFIX
               value: "sentence"
@@ -221,4 +221,4 @@ spec:
   ports:
     - name: http
       port: 80
-      targetPort: 80
+      targetPort: 8080

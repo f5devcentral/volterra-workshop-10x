@@ -33,7 +33,7 @@ Deploy an AKS in Azure
     }
 
 
-* Clone this Git to your laptop : https://github.com/f5devcentral/volterra-workshop-10x
+* Clone this Git to your laptop (dev branch) : https://github.com/f5devcentral/volterra-workshop-10x
 * In the ``dev`` branch, enter to the folder ``labs-content/class3/terraform``
 * Modify ``variables.tf`` according your project.
 
@@ -68,11 +68,13 @@ Deploy an AKS in Azure
     terraform plan
     terraform apply
 
+  .. note:: Do not close your terminal, because the outcomes will be used in the next step to download your kubeconfig
+
 * Get your kubeconfig file from yoru Azure AKS : 
 
   .. code-block:: Terminal
 
-    az aks get-credentials --resource-group k8s-demo-ss --name k8s-demo-cluster-ss --file kubeconfig-ss
+    az aks get-credentials --resource-group <YOUR-RG> --name <YOUR_CLUSTER_NAME> --file kubeconfig-myname
 
 
 Publish the App without Colors microservice
@@ -84,7 +86,7 @@ Publish the App without Colors microservice
   * Deploy labs-content/class3/k8s-deployments/aks-sentence-deployment.yaml
   * Deploy labs-content/class3/k8s-deployments/aks-sentence-deployment-nginx.yaml
 
-.. note:: Wait few seconds, and try to connect to the Azure LB created
+.. note:: Wait few seconds, and try to connect to the Azure LB created by the manifest
 
 .. image:: ../pictures/lab2/colors-only.png
    :align: center
