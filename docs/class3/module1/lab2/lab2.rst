@@ -7,7 +7,31 @@ Lab 2 - Deploy the app in Azure AKS and expose it on Volterra Global Network
 Deploy an AKS in Azure
 **********************
 
-.. note:: Check your AZ CLI is up and running in the right Tenant (F5 Sales) and Subscription (EMEA-SE)
+.. note:: Check your AZ CLI is up and running in the right Tenant (F5 Sales) and Subscription (f5-AZR_4261_SALES_EMEA_SE - 1005fe30-e19e-4091-8480-8b61ecb8106e).
+  
+  * az account list
+
+  .. code-block:: JSON
+    :emphasize-lines: 4, 5
+    
+    {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "e569f29e-b098-4cea-b6f0-48fa8532d64a",
+    "id": "1005fe30-e19e-4091-8480-8b61ecb8106e",
+    "isDefault": true,
+    "managedByTenants": [
+      {
+        "tenantId": "dd3dfd2f-6a3b-40d1-9be0-bf8327d81c50"
+      }
+    ],
+    "name": "f5-AZR_4261_SALES_EMEA_SE",
+    "state": "Enabled",
+    "tenantId": "e569f29e-b098-4cea-b6f0-48fa8532d64a",
+    "user": {
+      "name": "M.Dierick@F5.com",
+      "type": "user"
+    }
+
 
 * Clone this Git to your laptop : https://github.com/f5devcentral/volterra-workshop-10x
 * In the ``dev`` branch, enter to the folder ``labs-content/class3/terraform``
