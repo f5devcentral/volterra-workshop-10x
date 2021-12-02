@@ -9,11 +9,11 @@ Lab 3 - Deploy Colors microservice on premises and expose it
 Deploy Colors on private on-premises AKS
 ****************************************
 
-* Connect to ``Jumphost`` and run the Colors microservice manifest to deploy it into the private k8S.
+* In UDF, connect to ``Jumphost`` and run the Colors microservice manifest to deploy it into the private k8S.
 
   .. code-block:: terminal
 
-      kubectk apply -f /home/ubuntu/k8s-deployment/aks-sentence-colors.yaml
+      kubectl apply -f /home/ubuntu/k8s-deployment/aks-sentence-colors.yaml
 
 .. note:: As you can notice, the Colors microservice is published as a NodePort
 
