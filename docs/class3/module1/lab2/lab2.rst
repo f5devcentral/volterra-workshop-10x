@@ -135,6 +135,8 @@ Discover the services
   * Select your site, select ``site local inside network`` and upload your kubeconfig file
   * Don't forget to publish full FQDN to VIP
 
+  .. warning:: There is a known bug here, this can take up to 15 minutes to display the services.
+
   .. image:: ../pictures/lab2/sd.png
      :align: center
 
@@ -150,14 +152,17 @@ Create an Global Load Balancer and expose Sentence App
 
 * Create an Origin Pool with Nginx Frontend webserver as a member
 
-  * Select k8s service
+  * Select k8s service type
   * Enter service name (copy paste from service discovery)
   * Select Inside network
+  * Port 80 (port of the service in K8S)
+
+  .. note:: Team discussion : How does Volterra manage to find the right back-end pool member (analogy to BIG-IP) ??? Check the LB and origin pool status.
 
 * Create an LB to expose the Nginx Frontend webserver
 
   * Domain : sentence-<myname>.emea-ent.f5demos.com
-  * HTTPS
+  * HTTPS auto-cert
   * Select your Ogirin Pool
 
 
