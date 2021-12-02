@@ -110,11 +110,20 @@ Deploy a new Azure Vnet Site
   
   * Create a new subnet in the same Vnet (10.241.0.0/16). Name it ``aks-subnet-public``.
 
-* Deploy a Volterra Node (Dual NIC) and assign the existing private and public subnets from your AKS Vnet.
-  
-  * For the Cloud Credentials, select ``azure-emea-se`` 
+* Deploy a Azure VNET Volterra Node (Dual NIC) and assign the existing private and public subnets from your AKS Vnet.
 
-* WAIT and upgrade the node from the VotlConsole if required.
+  .. image:: ../pictures/lab2/azure-site.png
+     :align: center  
+
+  .. image:: ../pictures/lab2/subnet.png
+     :align: center
+
+  * For the Cloud Credentials, select ``azure-emea-se``
+  * Paste your public SSH key in case you need to connect to it for troubleshooting
+
+* ``Apply`` the Terraform
+
+* WAIT and ``upgrade`` the node from the VotlConsole if required.
 
 |
 
