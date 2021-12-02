@@ -131,7 +131,8 @@ Discover the services
 =====================
 
 * Create a service discovery
-  * Select your site, upload your kubeconfig file
+
+  * Select your site, select ``site local inside network`` and upload your kubeconfig file
   * Don't forget to publish full FQDN to VIP
 
   .. image:: ../pictures/lab2/sd.png
