@@ -9,11 +9,12 @@ Lab 3 - Deploy Colors microservice on premises and expose it
 Deploy Colors on private on-premises AKS
 ****************************************
 
-* In UDF, connect to ``Jumphost`` and run the Colors microservice manifest to deploy it into the private k8S.
+* In UDF, connect to ``Jumphost`` and run the Colors microservice manifest to deploy it into the private k8S. In order to test cross namespace service publication, we will deploy Colors service in ``api`` namespace.
 
   .. code-block:: terminal
 
-      kubectl apply -f /home/ubuntu/k8s-deployment/aks-sentence-colors.yaml
+      kubectl create ns api
+      kubectl apply -f /home/ubuntu/k8s-deployment/aks-sentence-colors.yaml -n api
 
 .. note:: As you can notice, the Colors microservice is published as a NodePort
 
@@ -22,12 +23,14 @@ Deploy Colors on private on-premises AKS
 Configure the private VolteNode in UDF
 **************************************
 
+.. note:: In this location (UDF), the Voltnode will be deployed as Single NIC.
+
 * Connect to the Volterra Node UI (admin/Volterra123)
 * Do not change the password, go directly to ``Dashboard``
 * Click Configure Now
 
   * If you haven't created a site token in Volt Console, do it Now
-  * Fill all the fields as you want, but select ``kvm-multi-nic-voltmesh``
+  * Fill all the fields as you want, but select ``kvm-voltmesh`` (Single NIC)
   * Do not set any Latitude/Longitude, we will do it in the VoltConsole
   * Save configuration
 
@@ -45,7 +48,7 @@ Discover the Colors service
 * Create a service discovery
   
   * Select your site, upload the kubeconfig file from the jumphost (/.kube/config)
-  * Select ``Site Local Network`` because the k8s API is on 10.1.1.x/24 network.
+  * Select ``Site Local Network`` because the VoltNode is a single NIC node.
   * Don't forget to ``publish full FQDN to VIP``
 
   .. image:: ../pictures/lab3/sd.png
@@ -60,7 +63,7 @@ Discover the Colors service
 Expose the microservice with F5 Distributed Cloud
 *************************************************
 
-* Create an Origin Pool targeting the discovered service
+* Create an Origin Pool targeting the discovered ``Colors`` service
   
   * Type ``k8s service``
   * Service name : the service name discovered
@@ -73,7 +76,10 @@ Expose the microservice with F5 Distributed Cloud
 * Create an Internal LB, so that the Generator can reach the Colors service
   
   * FYI, the generator targets this fqdn ``sentence-colors.default``
-  * Publish this LB on the Azure Site so that the AKS is updated with a new service ``sentence-colors.default``
+
+    .. note:: Team discussion: How does Generator pod in Azure AKS can find Colors service running in UDF k8S ? 
+
+  * Publish this LB on the ``Azure Site`` so that the AKS is updated with a new service ``sentence-colors.default``
   * Check you AKS services
 
   .. image:: ../pictures/lab3/lb.png
