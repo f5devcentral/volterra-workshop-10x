@@ -69,6 +69,7 @@ Expose the microservice with F5 Distributed Cloud
   * Service name : the service name discovered
   * Site : your UDF site
   * Tip : Select Outside Network
+  * Port 80
   
   .. image:: ../pictures/lab3/op.png
    :align: center
