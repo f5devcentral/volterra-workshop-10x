@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: generator
-          image: registry.gitlab.com/sentence-app/generator:latest
+          image: registry.gitlab.com/sentence-app/generator:v2
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
