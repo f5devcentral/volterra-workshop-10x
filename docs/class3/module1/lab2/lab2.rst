@@ -32,6 +32,7 @@ Deploy an AKS in Azure
       "type": "user"
     }
 
+* If needed, you can switch to the EMEA-SE subs : az account set --subscription "f5-AZR_4261_SALES_EMEA_SE"
 
 * Clone this Git to your laptop (dev branch) : https://github.com/f5devcentral/volterra-workshop-10x
 * In the ``dev`` branch, enter to the folder ``labs-content/class3/terraform``
@@ -106,11 +107,13 @@ Expose the app with F5 Distributed Cloud
 Deploy a new Azure Vnet Site
 ============================
 
-* First, create a new Subnet in your Vnet. The Terraform only created one Subnet (10.240.0.0/16). This subnet is our private subnet.
+* First, in Azure Portal, create a new ``Subnet`` in your Vnet. The Terraform only created one Subnet (10.240.0.0/16). This subnet is our private subnet.
   
-  * Create a new subnet in the same Vnet (10.241.0.0/16). Name it ``aks-subnet-public``.
+  * Create a new ``subnet`` in the same Vnet (10.241.0.0/16). Name it ``aks-subnet-public``.
 
 * Deploy a Azure VNET Volterra Node (Dual NIC) and assign the existing private and public subnets from your AKS Vnet.
+
+  .. note:: The resource group must be a new resourve group. You can't use an existing one.
 
   .. image:: ../pictures/lab2/azure-site.png
      :align: center  
@@ -121,7 +124,7 @@ Deploy a new Azure Vnet Site
   * For the Cloud Credentials, select ``azure-emea-se``
   * Paste your public SSH key in case you need to connect to it for troubleshooting
 
-* ``Apply`` the Terraform
+* ``Apply`` the Azure Vnet Site
 
 * WAIT and ``upgrade`` the node from the VotlConsole if required.
 
