@@ -27,8 +27,8 @@ For this lab, we will use the following object naming convention
 
 |
 
-Test you Anycast HTTPS LB
-*************************
+Test your Anycast HTTPS LB
+**************************
 
 * Check your Arcadia application is exposed and reachable from the F5XC Global Network
 
