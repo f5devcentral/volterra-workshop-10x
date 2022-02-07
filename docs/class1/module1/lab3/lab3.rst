@@ -30,6 +30,7 @@ Create a WAAP Policy
 
 .. image:: ../pictures/lab3/waap-config.png
    :align: center
+   :scale: 50%
 
 |
 
