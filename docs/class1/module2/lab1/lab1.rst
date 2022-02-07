@@ -18,7 +18,7 @@ For this lab, we will use the following object naming convention
 
    Origin Pool          Select ``IP Address of OP on Given site``
 
-                        IP ``172.16.2.4``
+                        IP ``172.21.2.4``
    
                         Site ``dierick-demowaap``
    

@@ -15,9 +15,9 @@ The architecture is as below
 As you notice:
 
 * Arcadia is running in a private docker instance (Ubuntu) in Azure
-* Docker instance IP address is ``172.16.2.4``
+* Docker instance IP address is ``172.21.2.4``
 * A MESH Node is already deployed, up and running, in order to do not wait 20 minutes
-* This Node has 2 interfaces connected to ``external-subnet (172.16.1.0/24)`` and ``internal-subnet (172.16.2.0/24)``
+* This Node has 2 interfaces connected to ``external-subnet (172.21.1.0/24)`` and ``internal-subnet (172.21.2.0/24)``
 
 |
 

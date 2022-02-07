@@ -24,6 +24,9 @@ We will expose this application on the F5XC Global Network by configuring the fo
 
 .. warning:: All over the lab, please be careful and stay in your NameSpace. Every SE/Student has his own NameSpace.
 
+.. image:: ../pictures/lab1/lab1-archi.png
+   :align: center
+
 Terminology
 ===========
 
@@ -32,10 +35,6 @@ F5XC reverse proxy and HTTP load balancer concepts allow for flow control of app
 
 **Origin Pool**
 An origin pool is a mechanism to configure a set of application endpoints grouped together into a resource pool. These endpoints could be IP:port tuples within a give site or a service discovered by one of Volterra’s many service discovery methods. These objects will be used the next step.
-
-.. image:: ../pictures/lab1/lab1-archi.png
-   :align: center
-
 
 
 .. note:: The goal is to publish this application through the F5XC Global Network so people all over the world can reach the closest F5XC RE.
