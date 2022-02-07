@@ -1,55 +1,17 @@
 # Volterra Workshop 10x
 Volterra Workshop 10x for F5ers, partners and customers.
 
-UNDER CONSTRUCTION !!!!!!!
+---
 
-## Overview
-Volterra Workshop 10x for F5ers, Partners and customers. This workshop is different from the Volterra 101 labs. It will be split in different sub-labs including K8S workshop and Public Cloud Networking 101.
+## F5XC WAAP Workshop for F5 Security SE Specialists
+
+This section is used by F5 Security SE Specialists to deploy WAAP policies in many environments
 
 ---
 
-## The Plan
+## Dedicated workshop for F5 Modern App Specialists
 
-* Per region with one local Volterra Lead
-* Will be split in different session so that students can take advantage of each session, and move forward step by step
-
-### k8s 201
-
-* Deploy a modern app in Azure AKS
-* SE deployed apps in k8S in Q3, now let's do it in a public cloud
-* Understand how an app is publish in an AKS (ingress + LB)
-
-### Volterra 101
-
-* Use case #1 - publish a public app through Volterra Global Network (understood by the field on last Monday)
-* Use case #2 - publish a private app running in the AKS on the Votlerra Global Network --> Voltconsole
-  
-  * Azure Networking 101
-  * Understand how AKS/EKS/GKS publish apps on vnet/vpc
-  * Deploy a VoltMesh on the same vnet
-  * Create the LB + OP
-  * Understand the workflow
-
-* Take Away --> create your Terraform plan with all the settings used in the previous steps.
-
-  * Keep this plan for the next workshop (2 weeks later)
-  * DELETE the Volterra environment and keep the AKS up and runnning
-
-### Volterra 102 - 2 weeks later
-
-* Use case #4
-
-  * Re-deploy the same Volterra environment with the Terraform
-  * Lift and shift one service to AWS
-    * AWS networking 101
-    * TGW vs VPC
-  * Understand Volterra MCN
-
----
-
-## Dedicated workshop for F5 F5 Distributed Cloud Specialists
-
-This section is used by F5 Specialists to create a MultiCloud infrastructure and demo in their own environments.
+This section is used by F5 Modern App Specialists to create a MultiCloud infrastructure and demo in their own environments.
 
 ---
 

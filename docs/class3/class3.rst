@@ -1,5 +1,5 @@
-Class3 - Volterra Workshop for Specialists
-##########################################
+Class3 - Volterra Workshop for Modern App Specialists
+#####################################################
 
 Lab Maintainers:
 
