@@ -1,5 +1,5 @@
-Lab 1 - Expose the private Arcadia application on F5XC
-######################################################
+Lab 1 - Expose the private Arcadia application
+##############################################
 
 Create the networking objects
 *****************************

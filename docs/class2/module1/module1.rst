@@ -1,8 +1,7 @@
 Module 1 - F5XC Shape Bot Defense
 #################################
 
-In this section, we will deploy a BIG-IP MA (Modular Architecture) in order to test several use cases covered by BIG-IP MA APM in October 2021.
-
+In this section, we will review the Bot Protection applied in the WAAP Policy (Bot Signature) and add Shape Bot Protection for advanced Bots.
 
 
 **Module 1 - All sections**

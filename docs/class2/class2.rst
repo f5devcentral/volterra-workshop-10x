@@ -6,9 +6,8 @@ Lab Maintainers:
   Matthieu Dierick <m.dierick@f5.com>
 
 |
-   
-.. note:: Welcome to Volterra Workshop 102 lab guide
 
+In this section, we will cover advanced WAAP features.   
 
 .. toctree::
    :maxdepth: 1
