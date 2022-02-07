@@ -1,26 +1,28 @@
 Lab 2 - Expose the public application
 #####################################
 
-The application used in the lab
-*******************************
+Create the networking objects
+*****************************
 
-For this lab, we will use this application : http://sentence.emea.f5se.com
+For this lab, we will use the following object naming convention
 
-This application is a modern application displaying a sentence with 4 words. Each word comes from a word generator micro-service.
+.. table:: Naming Convention
+   :widths: auto
 
-.. image:: ../pictures/lab1/lab1-app.png
-   :align: center
+   ===============    ================================================
+   Object               Value
+   ===============    ================================================
+   HTTP LB              https://arcadia-<se_name>.emea-ent.f5demos.com
+                        
+                        Enable HTTPS AutoCert
 
-|
+   Origin Pool          https://arcadia.emea.f5se.com
 
-The lab architecture
-********************
+                        Disable TLS Verifiation
+   ===============    ================================================
 
-.. image:: ../pictures/lab1/lab1-archi.png
-   :align: center
+* Create the Origin Pool targeting Arcadia public app
+* Create the HTTPS LB
+* Check your Arcadia application is exposed and reachable from the F5XC Global Network
 
 
-
-.. note:: The goal is to publish this application through the Volterra Global Network
-
- 

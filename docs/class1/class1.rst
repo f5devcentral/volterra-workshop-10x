@@ -1,19 +1,12 @@
-Class1 - Volterra Workshop 101 - under construction
-###################################################
+Class1 - F5XC WAAP Use Cases
+############################
 
 Lab Maintainers:
 
   Matthieu Dierick <m.dierick@f5.com>
 
-  Fouad Chmainy <f.chmainy@f5.com>
-
-  Anton Gyllenhammar <a.gyllenhammar@f5.com>
-
 |
    
-.. note:: Welcome to Volterra Workshop 101 lab guide
-
-
 .. toctree::
    :maxdepth: 2
    :glob:
