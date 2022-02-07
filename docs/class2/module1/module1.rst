@@ -1,5 +1,5 @@
-Module 1 - Use Case 4
-#####################
+Module 1 - F5XC Shape Bot Defense
+#################################
 
 In this section, we will deploy a BIG-IP MA (Modular Architecture) in order to test several use cases covered by BIG-IP MA APM in October 2021.
 

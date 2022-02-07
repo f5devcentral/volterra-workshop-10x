@@ -1,5 +1,5 @@
-Module 1 - Use Case 1 - Expose public application
-#################################################
+Module 1 - Use Case 1 - Expose public application and protect it with F5XC WAAP
+###############################################################################
 
 In this section, we will expose an existing and public internet facing application through Volterra Global Network.
 

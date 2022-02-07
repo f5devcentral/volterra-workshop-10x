@@ -1,5 +1,5 @@
-Module 3 - Use Case 3 - Protect an app running in Public Cloud only
-###################################################################
+Module 2 - Deployed a Positive Security Policy
+##############################################
 
 In this section, we will publish a modern application in Azure AKS
 
