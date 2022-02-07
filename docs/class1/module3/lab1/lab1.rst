@@ -37,3 +37,4 @@ Test your CE-Only lab
 * As previous labs, connect to your LB and send attacks
 
 .. note:: As you can notice, in the 3 use cases, we keep consistancy with one WAAP policy whereever the LB or the App reside. 
+

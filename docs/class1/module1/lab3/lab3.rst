@@ -6,23 +6,23 @@ It is time to create your first WAAP policy and assign it on your HTTPS LB.
 Create a WAAP Policy
 ********************
 
-* Check you are in your NameSpace
-* Create a new WAAP policy and customize it with few settings (Menu App Firewall)
-  
+*  Check you are in your NameSpace
+*  Create a new WAAP policy and customize it with few settings (Menu App Firewall)
+
   *  Blocking mode
   *  Policy custom
 
     *  Attack signatures
 
-      * Type Default
-      * Accuracy High, Medium, Low 
+      *  Type Default
+      *  Accuracy High, Medium, Low 
 
-    * Keep the rest as Default
+    *  Keep the rest as Default
 
-  * Bot Protection
-  
-    * Block for Malicious and Suspicious Bot
-    * Report for Good Bot
+  *  Bot Protection
+
+    *  Block for Malicious and Suspicious Bot
+    *  Report for Good Bot
 
 .. note:: Do not save yet your WAAP policy, we will customize the Blocking page
 
