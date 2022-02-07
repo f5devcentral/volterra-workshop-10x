@@ -1,5 +1,4 @@
-Lab 2 - Deploy Modern App in AKS
-################################
+Lab 2 - Allow HTTP Methods and File Types
+#########################################
 
-To make things simple, we will use the F5 demo app (https://github.com/f5devcentral/f5-demo-httpd). This app will display the information we need to test MA (headers ...)
 
