@@ -4,8 +4,6 @@ Module 2 - Use Case 2 - Expose a private application and protect it with F5XC WA
 In this section, we will expose the same application, but this time, the application is running in a private environment and it is not exposed on the Internet.
 It means the DevOps pushed the app in a modern environment (k8s and co), and SecOps need to expose it on the internet thanks to F5XC and multi-cloud story.
 
-Lab Architecture
-****************
 
 The architecture is as below
 

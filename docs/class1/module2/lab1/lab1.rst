@@ -30,7 +30,7 @@ For this lab, we will use the following object naming convention
 * Check you are in your Namespace
 * Create the Origin Pool targeting Arcadia private IP on given site
 
-  .. image:: ../pictures/lab1/op.png
+  .. image:: ../pictures/lab1/OP.png
      :align: center
 
 * Create the HTTPS LB
