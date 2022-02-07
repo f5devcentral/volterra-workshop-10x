@@ -21,7 +21,7 @@ As you notice:
 
 |
 
-**Module 1 - All sections**
+**Module 2 - All sections**
 
 .. toctree::
    :maxdepth: 1

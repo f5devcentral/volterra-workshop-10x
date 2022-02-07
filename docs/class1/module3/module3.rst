@@ -15,7 +15,7 @@ The architecture is as below. It is the same as previous lab, but users/consumer
    :align: center
 
 
-**Module 1 - All sections**
+**Module 3 - All sections**
 
 .. toctree::
    :maxdepth: 1

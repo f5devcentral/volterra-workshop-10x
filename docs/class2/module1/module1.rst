@@ -1,7 +1,7 @@
-Module 1 - F5XC Shape Bot Defense
-#################################
+Module 2 - Deployed a Positive Security Policy
+##############################################
 
-In this section, we will review the Bot Protection applied in the WAAP Policy (Bot Signature) and add Shape Bot Protection for advanced Bots.
+In this section, we will learn how to use Service Policy in order to apply Positive Security model.
 
 
 **Module 1 - All sections**
