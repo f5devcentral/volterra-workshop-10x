@@ -21,8 +21,15 @@ For this lab, we will use the following object naming convention
                         Disable TLS Verifiation
    ===============    ================================================
 
+* Check you are in your Namespace
 * Create the Origin Pool targeting Arcadia public app
 * Create the HTTPS LB
+
+|
+
+Test you Anycast HTTPS LB
+*************************
+
 * Check your Arcadia application is exposed and reachable from the F5XC Global Network
 
-
+.. note:: So far, Arcadia is not protected but exposed all over the world on all F5XC RE.
