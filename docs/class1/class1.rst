@@ -6,7 +6,11 @@ Lab Maintainers:
   Matthieu Dierick <m.dierick@f5.com>
 
 |
-   
+
+.. note:: In this Class, you will focus mainly on the deployment models. You are going to see you can deploy F5XC WAAP in many environments.
+
+|
+
 .. toctree::
    :maxdepth: 2
    :glob:

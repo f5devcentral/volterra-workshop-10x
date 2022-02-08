@@ -1,7 +1,7 @@
 Module 1 - Use Case 1 - Expose public application and protect it with F5XC WAAP
 ###############################################################################
 
-In this section, we will expose an existing and public internet facing application through Volterra Global Network.
+In this section, we will expose an existing and public internet facing application through F5XC Global Network.
 
 The use case is simple:
 
@@ -11,6 +11,10 @@ The use case is simple:
 * The application will be available everywhere though all F5XC Regional Edge locations
 * We will apply a WAAP policy
 
+Today (Feb 2022), the worldwide POPs map is as below
+
+.. image:: ./pictures/map.png
+   :align: center
 
 **Module 1 - All sections**
 
