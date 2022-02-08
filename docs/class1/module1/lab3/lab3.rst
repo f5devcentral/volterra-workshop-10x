@@ -9,28 +9,16 @@ Create a WAAP Policy
 *  Check you are in your NameSpace
 *  Create a new WAAP policy and customize it with few settings (Menu App Firewall)
 
-  *  Blocking mode
-  *  Policy custom
+  .. image:: ../pictures/lab3/waap-config.png
+     :align: center
+     :scale: 50%
 
-    *  Attack signatures
-
-      *  Type Default
-      *  Accuracy High, Medium, Low 
-
-    *  Keep the rest as Default
-
-  *  Bot Protection
-
-    *  Block for Malicious and Suspicious Bot
-    *  Report for Good Bot
 
 .. note:: Do not save yet your WAAP policy, we will customize the Blocking page
 
 |
 
-.. image:: ../pictures/lab3/waap-config.png
-   :align: center
-   :scale: 50%
+
 
 |
 
