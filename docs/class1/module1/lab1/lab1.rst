@@ -6,7 +6,7 @@ The application used in the lab
 
 For this lab, we will use this application : https://arcadia.emea.f5se.com
 
-This application is a modern application simulating a banking application. You can buy and sell stocks, or make money transfer with friends.
+This application is a modern application simulating a banking application. You can buy and sell stocks, or make money transfer to friends.
 
 .. image:: ../pictures/lab1/app-arcadia.png
    :align: center

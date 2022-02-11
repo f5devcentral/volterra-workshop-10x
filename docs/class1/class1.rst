@@ -7,7 +7,7 @@ Lab Maintainers:
 
 |
 
-.. note:: In this Class, you will focus mainly on the deployment models. You are going to see you can deploy F5XC WAAP in many environments.
+.. note:: In this Class, you will focus mainly on the deployment models. You are going to see how you can deploy F5XC WAAP in many environments.
 
 |
 

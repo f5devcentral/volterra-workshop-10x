@@ -11,14 +11,14 @@ Create a HTTP LB and expose it on the Mesh Node only
 If you understand correctly this use case, we want the WAAP policy applied on a HTTP LB exposed on the Mesh Node in Azure only. We don't want the users/consumers to transit through the F5XC Global Network.
 
 * Create a new ``HTTP LB`` - NOT A HTTPS LB.
-* For the FQDN, use this convention ``arcadia-<se_name>>-ceonly.fakefqdn.azure``
-* Select the Origin Pool used and created in the previous lab. This private Origin Pool.
+* For the FQDN, use this convention ``arcadia-<se_name>-ceonly.fakefqdn.azure``
+* Select the Origin Pool used and created in the previous lab. The private Origin Pool.
 * Expose this LB on ``dierick-demowaap`` site
 
   * In VIP Configuration, enable ``Show Advanced Fields``
   * Advertise Custom
   * Create a new custom config (show advanced fields)
-  * Select the ``dierick-demowaap`` site and expose on ``outside`` interface
+  * Select the ``dierick-demowaap`` site and expose on ``outside`` interface (the one exposed by the Azure LB)
 
   .. image:: ../pictures/lab1/custom-vip.png
      :align: center
@@ -28,7 +28,7 @@ If you understand correctly this use case, we want the WAAP policy applied on a 
 Modify you Host file entries
 ****************************
 
-* Modify your host file in order to target ``20.67.26.211`` for the FQDN created ``arcadia-<se_name>>-ceonly.fakefqdn.azure``
+* Modify your host file in order to target ``20.67.26.211`` for the FQDN created ``arcadia-<se_name>-ceonly.fakefqdn.azure``
 
 
 Test your CE-Only lab

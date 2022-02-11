@@ -7,7 +7,7 @@ The use case is simple:
 
 * An application is already up and running somewhere (Datacenter, public cloud ...)
 * This application has a public IP address or FQDN
-* We will use and leverage the F5XS Global Network to expose this application
+* We will use and leverage the F5XC Global Network to expose this application
 * The application will be available everywhere though all F5XC Regional Edge locations
 * We will apply a WAAP policy
 

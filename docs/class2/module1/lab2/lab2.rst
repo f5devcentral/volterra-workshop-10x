@@ -1,7 +1,7 @@
 Lab 2 - Allow HTTP Methods, File Types and Geolocalisation
 ##########################################################
 
-In this lab, we will create 3 more rules in the Service Policy:
+In this lab, we will create 3 more rules:
 
 * Allow only GET and POST HTTP Methods
 * Disallow some file types (exe, bat ...)
@@ -48,7 +48,7 @@ Disallow file types
 Geoloc - disallow countries
 ***************************
 
-* For Geolocalization or any Source IP rules, a new Service Policy is required.
+* For Geolocalization or any Source IP rules, a ``new Service Policy`` is required. This can't be added to the L7 Custom Policy
 * Create a new Service Policy named ``sp-geo``
 * In the rules, instead of creating a custom rule, we wil create a ``Denied Sources`` rule
 * In ``Country List``, select the countries you want to deny
@@ -63,7 +63,7 @@ Geoloc - disallow countries
 Assign your Service Policies to your HTTP LB
 ********************************************
 
-* Now you can assign your 2 SP to your HTTP LB. The one you prefer to make yrou test.
+* Now you can assign your 2 SP to your HTTP LB. The HTTP LB you prefer to make your test.
 * Don't forget the order
 
   * First : SP Geoloc

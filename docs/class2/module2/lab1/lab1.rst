@@ -20,11 +20,13 @@ Now, let's protect this endpoint so that the CURL will be blocked, but not the l
 * Edit your HTTPS LB from lab 1 (HTTPS LB on RE only) - Or any other if you prefer.
 * Enable ``Bot Defense``
 * Select US (EU not yet available) and ``Show Advanced Fields``
-* Extend ``Timeout`` to 1500
+* Extend ``Timeout`` to 1500 (because pipelines located in US)
 
 * Create a new ``Bot Defense Policy``
 * Create a new ``Protected App Endpoints``
 * Add a new item and configure as below. This is the Buy Stock URL.
+
+|
 
   .. image:: ../pictures/lab1/rule.png
      :align: center
@@ -63,4 +65,8 @@ Check your analytics
 
   .. image:: ../pictures/lab1/analytics.png
      :align: center
--
+
+
+.. warning:: End of the SE/Partner/Customer F5XC WAAP foundational
+
+   

@@ -28,7 +28,7 @@ Customize the blocking page
 * Still in your WAAP policy configuration screen, scroll down and enable ``Show Advanced Fields`` in ``Advanced Configuration``
 
 * For the Blocking Response Page, change to ``Custom``
-* Customize the page as you want, or use the code below. Select ``Base64(binary)``, in order to be sure some metacharacters will not be skipped
+* Customize the page as you want, or use the code below. Select ``Base64(binary)``, in order to be sure some metacharacters will not be skipped (there is a COPY button on the top right of the string)
 
 .. code-block:: Base64
 
@@ -49,7 +49,7 @@ Test you WAAP Policy
 
   .. note:: Has the default CURL been blocked ??? WHY ???
   
-* Now, send a more smart and clever CURL request
+* Now, send a more customized CURL request
 
 .. code-block:: bash
 

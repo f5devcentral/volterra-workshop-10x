@@ -2,7 +2,7 @@ Module 2 - Use Case 2 - Expose a private application and protect it with F5XC WA
 ##################################################################################
 
 In this section, we will expose the same application, but this time, the application is running in a private environment and it is not exposed on the Internet.
-It means the DevOps pushed the app in a modern environment (k8s and co), and SecOps need to expose it on the internet thanks to F5XC and multi-cloud story.
+It means the DevOps pushed the app in a modern environment (k8s, AKS, EKS or just docker ...), and SecOps need to expose it on the internet thanks to F5XC and multi-cloud story.
 
 
 The architecture is as below
@@ -12,7 +12,7 @@ The architecture is as below
 
 |
 
-As you notice:
+As you may notice:
 
 * Arcadia is running in a private docker instance (Ubuntu) in Azure
 * Docker instance IP address is ``172.21.2.4``

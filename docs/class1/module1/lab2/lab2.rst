@@ -25,6 +25,8 @@ For this lab, we will use the following object naming convention
 * Create the Origin Pool targeting Arcadia public app
 * Create the HTTPS LB
 
+.. warning:: Disable TLS verification in the Origin Pool because the certification on https://arcadia.emea.f5se.com does not contain the Cert Chain.
+
 |
 
 Test your Anycast HTTPS LB
