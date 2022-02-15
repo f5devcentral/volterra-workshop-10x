@@ -22,7 +22,7 @@ For this lab, we will use the following object naming convention
 
                         Enable TLS
 
-                        Disable TLS Verifiation
+                        Disable TLS Verification
    ===============    ================================================
 
 * Check you are in your Namespace
