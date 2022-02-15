@@ -22,7 +22,7 @@ We will expose this application on the F5XC Global Network by configuring the fo
 * Origin Pool
 * HTTP Load Balancer
 
-.. warning:: All over the lab, please be careful and stay in your NameSpace. Every SE/Student has his own NameSpace.
+.. warning:: All over the lab, please be careful and stay in your NameSpace. Every SE/Student has his/her own NameSpace.
 
 .. image:: ../pictures/lab1/lab1-archi.png
    :align: center
