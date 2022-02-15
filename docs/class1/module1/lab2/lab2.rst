@@ -18,6 +18,10 @@ For this lab, we will use the following object naming convention
 
    Origin Pool          https://arcadia.emea.f5se.com
 
+                        Port 443 
+                        
+                        Enable TLS
+
                         Disable TLS Verifiation
    ===============    ================================================
 
