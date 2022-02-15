@@ -25,6 +25,8 @@ For this lab, we will use the following object naming convention
                         Select ``Inside Network``
 
                         Port 80
+
+                        NO TLS
    ===============    ================================================
 
 * Check you are in your Namespace
