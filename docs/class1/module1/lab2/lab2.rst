@@ -19,7 +19,7 @@ For this lab, we will use the following object naming convention
    Origin Pool          https://arcadia.emea.f5se.com
 
                         Port 443 
-                        
+
                         Enable TLS
 
                         Disable TLS Verifiation
@@ -39,3 +39,5 @@ Test your Anycast HTTPS LB
 * Check your Arcadia application is exposed and reachable from the F5XC Global Network
 
 .. note:: So far, Arcadia is not protected but exposed all over the world on all F5XC RE.
+
+.. warning:: Some Service Providers have a very long recursive cache. It can take 
