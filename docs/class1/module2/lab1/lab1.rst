@@ -9,25 +9,29 @@ For this lab, we will use the following object naming convention
 .. table:: Naming Convention
    :widths: auto
 
-   ===============    ================================================
+   ===============    ========================================================================================
    Object               Value
-   ===============    ================================================
-   HTTP LB              https://arcadia-<se_name>-rece.emea-ent.f5demos.com
+   ===============    ========================================================================================
+   HTTP LB              **EMEA-SE** tenant : https://arcadia-<se_name>.emea-ent.f5demos.com
                         
+                        **F5-SALES-PUBLIC** tenant : https://arcadia-<student_number>.sales-public.f5demos.com
+
                         Enable HTTPS AutoCert
 
    Origin Pool          Select ``IP Address of OP on Given site``
 
                         IP ``172.21.2.4``
    
-                        Site ``dierick-demowaap``
+                        Site for **EMEA-SE tenant** ``dierick-demowaap``
+
+                        Site for **F5-SALES-PUBLIC tenant** ``emea-azure-waap``
    
                         Select ``Inside Network``
 
                         Port 80
 
                         NO TLS
-   ===============    ================================================
+   ===============    ========================================================================================
 
 * Check you are in your Namespace
 * Create the Origin Pool targeting Arcadia private IP on given site
