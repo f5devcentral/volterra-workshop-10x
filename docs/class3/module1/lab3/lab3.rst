@@ -49,7 +49,7 @@ Discover the Colors service
   
   * Select your site, upload the kubeconfig file from the jumphost (/.kube/config)
   * Select ``Site Local Network`` because the VoltNode is a single NIC node.
-  * Don't forget to ``publish full FQDN to VIP``
+  * In ``VIP Publishing Configuration settings``, Don't forget to ``publish fully qualified domain to VIP mapping``
 
   .. image:: ../pictures/lab3/sd.png
      :align: center
