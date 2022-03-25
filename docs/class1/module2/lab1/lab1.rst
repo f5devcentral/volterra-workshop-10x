@@ -22,7 +22,7 @@ For this lab, we will use the following object naming convention
 
                         IP ``172.21.2.4``
    
-                        Site for **EMEA-SE tenant** ``dierick-demowaap``
+                        Site for **EMEA-SE tenant** ``demo-waap-emea``
 
                         Site for **F5-SALES-PUBLIC tenant** ``emea-azure-waap``
    

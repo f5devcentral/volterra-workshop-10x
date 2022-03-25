@@ -5,7 +5,7 @@ For this lab, as the Mesh Node is shared between all SE/Students, we will use a 
 
 FYI, the public Azure IP address of the node is:
 
-* For **EMEA-SE tenant** ``20.67.26.211``
+* For **EMEA-SE tenant** ``20.224.0.208``
 * For **F5-SALES-PUBLIC tenant** ``20.86.17.42``
 
 Create a HTTP LB and expose it on the Mesh Node only
