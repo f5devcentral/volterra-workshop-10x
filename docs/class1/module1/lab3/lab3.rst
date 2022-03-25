@@ -67,7 +67,7 @@ Test you WAAP Policy
 
   .. code-block:: bash
 
-    curl --location --request POST "http://<TO_BE_REPLACED_BY_YOUR_FQDN>/trading/rest/buy_stocks.php" --header "authorization: Basic YWRtaW46YWRtaW4uRjVkZW1vLmNvbQ==" --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" --header "content-type: application/json; charset=UTF-8" --header "x-requested-with: XMLHttpRequest" --header "Cookie: 3ba01=3b7f08b7c6ff531030e6f43656582f0b000004c246698307ddbe" --data-raw "{\"trans_value\": 330,\"qty\": 2,\"company\": \"FFIV\",\"action\": \"buy\",\"stock_price\": 165}"
+    curl --location --request POST "https://<TO_BE_REPLACED_BY_YOUR_FQDN>/trading/rest/buy_stocks.php" --header "authorization: Basic YWRtaW46YWRtaW4uRjVkZW1vLmNvbQ==" --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" --header "content-type: application/json; charset=UTF-8" --header "x-requested-with: XMLHttpRequest" --header "Cookie: 3ba01=3b7f08b7c6ff531030e6f43656582f0b000004c246698307ddbe" --data-raw "{\"trans_value\": 330,\"qty\": 2,\"company\": \"FFIV\",\"action\": \"buy\",\"stock_price\": 165}"
 
 .. note:: Has the customized CURL been blocked ??? WHY ???
 
