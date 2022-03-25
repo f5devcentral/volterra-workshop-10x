@@ -7,21 +7,6 @@ In this lab, we will create 3 more rules:
 * Disallow some file types (exe, bat ...)
 * Geoloc - disallow some countries
 
-Allow HTTP Methods
-******************
-
-* In the same Service Policy created in previous lab, create a new rule
-* Name it as you want ``method-allow``
-* In action, set ``Allow``
-* In Request Match, Configure ``HTTP Method``
-* Add ``GET`` and ``POST``
-* Save your rule.
-* You should see now 2 rules
-
-  * IP-Reputation rule
-  * Methods allowed rule
-
-|
 
 Disallow file types
 *******************
@@ -38,11 +23,6 @@ Disallow file types
 
 .. note:: This will disallow doc, docx, pdf, exe and bat file types.
 
-.. note:: You should have 3 rules in your Service Policy
-
-  .. image:: ../pictures/lab2/all-rules.png
-     :align: center
-
 |
 
 Geoloc - disallow countries
@@ -57,6 +37,29 @@ Geoloc - disallow countries
   .. image:: ../pictures/lab2/geo.png
      :align: center
      :scale: 50%
+
+|
+
+Allow HTTP Methods
+******************
+
+* In the same Service Policy created in previous lab, create a new rule
+* Name it as you want ``method-allow``
+* In action, set ``Allow``
+* In Request Match, Configure ``HTTP Method``
+* Add ``GET`` and ``POST``
+* Save your rule.
+* You should see now 2 rules
+
+  * IP-Reputation rule
+  * Methods allowed rule
+
+|
+
+.. note:: You should have 3 rules in your Service Policy. Check the order.
+
+  .. image:: ../pictures/lab2/all-rules.png
+     :align: center
 
 |
 
