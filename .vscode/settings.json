@@ -1,4 +1,4 @@
 {
     "restructuredtext.confPath": "${workspaceFolder}/docs",
-    "esbonio.sphinx.confDir": "/Users/dierick/Documents/Github/volterra-workshop-10x/docs"
+    "esbonio.sphinx.confDir": "${workspaceFolder}/docs"
 }
