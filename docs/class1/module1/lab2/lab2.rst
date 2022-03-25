@@ -42,4 +42,4 @@ Test your Anycast HTTPS LB
 
 .. note:: So far, Arcadia is not protected but exposed all over the world on all F5XC RE.
 
-.. warning:: Some Service Providers have a very long recursive cache. It can take 
+.. warning:: Some Service Providers have a very long recursive cache. It can take several minutes to get a DNS response. You can change your DNS server to 1.1.1.1 or 8.8.8.8 to fix that.

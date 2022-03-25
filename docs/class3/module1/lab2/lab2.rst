@@ -136,7 +136,7 @@ Discover the services
 * Create a service discovery
 
   * Select your site, select ``site local inside network`` and upload your kubeconfig file
-  * Don't forget to publish full FQDN to VIP
+  * In ``VIP Publishing Configuration settings``, Don't forget to ``publish fully qualified domain to VIP mapping``
 
   .. warning:: There is a known bug here, this can take up to 15 minutes to display the services.
 
@@ -166,7 +166,7 @@ Create an Global Load Balancer and expose Sentence App
 
   * Domain : sentence-<myname>.emea-ent.f5demos.com
   * HTTPS auto-cert
-  * Select your Ogirin Pool
+  * Select your Origin Pool
 
 
 .. note :: Test your deployment
