@@ -16,6 +16,8 @@ For this lab, we will use the following object naming convention
                         
                         **F5-SALES-PUBLIC** tenant : https://arcadia-<student_number>.sales-public.f5demos.com
 
+                        **F5-CHANNEL** tenant : https://arcadia-<partner-name>.f5-channel.f5demos.com
+
                         Enable HTTPS AutoCert
 
    Origin Pool          Select ``IP Address of OP on Given site``
@@ -25,6 +27,8 @@ For this lab, we will use the following object naming convention
                         Site for **EMEA-SE tenant** ``demo-waap-emea``
 
                         Site for **F5-SALES-PUBLIC tenant** ``emea-azure-waap``
+
+                        Site for **F5-CHANNEL tenant** ``azure-emea-waap``
    
                         Select ``Inside Network``
 

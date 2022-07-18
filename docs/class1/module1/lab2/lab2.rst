@@ -15,6 +15,8 @@ For this lab, we will use the following object naming convention
    HTTP LB              **EMEA-SE** tenant : https://arcadia-<se_name>.emea-ent.f5demos.com
                         
                         **F5-SALES-PUBLIC** tenant : https://arcadia-<student_number>.sales-public.f5demos.com
+
+                        **F5-CHANNEL** tenant : https://arcadia-<partner-name>.f5-channel.f5demos.com
                         
                         Enable HTTPS AutoCert
 
