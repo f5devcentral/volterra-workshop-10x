@@ -7,6 +7,7 @@ FYI, the public Azure IP address of the node is:
 
 * For **EMEA-SE tenant** ``20.224.0.208``
 * For **F5-SALES-PUBLIC tenant** ``20.86.17.42``
+* For **F5-CHANNEL tenant** ``20.107.50.6``
 
 Create a HTTP LB and expose it on the Mesh Node only
 ****************************************************
