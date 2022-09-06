@@ -17,12 +17,24 @@ If you understand correctly this use case, we want the WAAP policy applied on a 
 * Create a new ``HTTP LB`` - NOT A HTTPS LB.
 * For the FQDN, use this convention ``arcadia-<se_name_or_student_id>-ceonly.fakefqdn.azure``
 * Select the Origin Pool used and created in the previous lab. The private Origin Pool.
-* Expose this LB on ``dierick-demowaap`` site
+* Expose this LB on the corresponding site (based on your tenant)
+
+    ==========================    ===============
+    Tenant                        Site name
+    ==========================    ===============
+    **EMEA-SE** tenant            demo-waap-emea
+                            
+    **F5-SALES-PUBLIC** tenant    emea-azure-waap
+
+    **F5-CHANNEL** tenant         azure-emea-waap
+
+    ==========================    ===============
+
 
   * In VIP Configuration, enable ``Show Advanced Fields``
   * Advertise Custom
   * Create a new custom config (show advanced fields)
-  * Select the ``dierick-demowaap`` site and expose on ``outside`` interface (the one exposed by the Azure LB)
+  * Select the ``site according above table`` and expose on ``outside`` interface (the one exposed by the Azure LB)
 
   .. image:: ../pictures/lab1/custom-vip.png
      :align: center
