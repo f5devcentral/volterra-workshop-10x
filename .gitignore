@@ -7,3 +7,5 @@ docs/errors.txt
 labs-content/class3/terraform/kubeconfig-dierick-se
 labs-content/class3/terraform/.terraform
 labs-content/class3/terraform/terraform.tfstate
+.vscode/settings.json
+docs/class1/module1/.DS_Store

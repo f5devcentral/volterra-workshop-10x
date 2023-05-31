@@ -6,7 +6,7 @@ For this lab, as the Mesh Node is shared between all SE/Students, we will use a 
 FYI, the public Azure IP address of the node is:
 
 * For **EMEA-SE tenant** ``20.224.0.208``
-* For **F5-SALES-PUBLIC tenant** ``20.86.17.42``
+* For **F5-EMEA-WORKSHOP tenant** ``74.234.144.33``
 * For **F5-CHANNEL tenant** ``20.107.50.6``
 
 Create a HTTP LB and expose it on the Mesh Node only
@@ -19,16 +19,16 @@ If you understand correctly this use case, we want the WAAP policy applied on a 
 * Select the Origin Pool used and created in the previous lab. The private Origin Pool.
 * Expose this LB on the corresponding site (based on your tenant)
 
-    ==========================    ===============
-    Tenant                        Site name
-    ==========================    ===============
-    **EMEA-SE** tenant            demo-waap-emea
+    ===========================    ===============
+    Tenant                         Site name
+    ===========================    ===============
+    **EMEA-SE** tenant             demo-waap-emea
                             
-    **F5-SALES-PUBLIC** tenant    emea-azure-waap
+    **F5-EMEA-WORKSHOP** tenant    emea-azure-node
 
-    **F5-CHANNEL** tenant         azure-emea-waap
+    **F5-CHANNEL** tenant          azure-emea-waap
 
-    ==========================    ===============
+    ===========================    ===============
 
 
   * In VIP Configuration, enable ``Show Advanced Fields``

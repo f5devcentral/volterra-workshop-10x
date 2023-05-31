@@ -9,14 +9,14 @@ For this lab, we will use the following object naming convention
 .. table:: Naming Convention
    :widths: auto
 
-   ===============    ========================================================================================
+   ===============    ===========================================================================================
    Object               Value
-   ===============    ========================================================================================
-   HTTP LB              **EMEA-SE** tenant : https://arcadia-<se_name>.emea-ent.f5demos.com
+   ===============    ===========================================================================================
+   HTTP LB              **EMEA-SE** tenant : https://arcadia-re-ce-<se_name>.emea-ent.f5demos.com
                         
-                        **F5-SALES-PUBLIC** tenant : https://arcadia-<student_number>.sales-public.f5demos.com
+                        **F5-EMEA-WORKSHOP** tenant : https://arcadia-re-ce-<student_name>.workshop.emea.f5se.com
 
-                        **F5-CHANNEL** tenant : https://arcadia-<partner-name>.f5-channel.f5demos.com
+                        **F5-CHANNEL** tenant : https://arcadia-re-ce-<partner-name>.f5-channel.f5demos.com
 
                         Enable HTTPS AutoCert
 
@@ -26,7 +26,7 @@ For this lab, we will use the following object naming convention
    
                         Site for **EMEA-SE tenant** ``demo-waap-emea``
 
-                        Site for **F5-SALES-PUBLIC tenant** ``emea-azure-waap``
+                        Site for **F5-EMEA-WORKSHOP tenant** ``emea-azure-node``
 
                         Site for **F5-CHANNEL tenant** ``azure-emea-waap``
    
@@ -35,7 +35,7 @@ For this lab, we will use the following object naming convention
                         Port 80
 
                         NO TLS
-   ===============    ========================================================================================
+   ===============    ===========================================================================================
 
 * Check you are in your Namespace
 * Create the Origin Pool targeting Arcadia private IP on given site
