@@ -1,17 +1,21 @@
 Lab 2 - Allow HTTP Methods, File Types and Geolocalisation
 ##########################################################
 
-In this lab, we will create 3 more rules:
+.. note:: Positive Security is done via Service Policy. It is a another object/policy, separated from the WAAP policy
+
+In this lab, we will create a Service Policy with 3 rules:
 
 * Allow only GET and POST HTTP Methods
 * Disallow some file types (exe, bat ...)
 * Geoloc - disallow some countries
 
 
+Create an New Service Policy and new rules as below
+
 Disallow file types
 *******************
 
-* In the same Service Policy, create a new rule
+* In your Service Policy, create a new rule
 * Name it as you want ``file-type-deny``
 * In action, set ``Deny``
 * In Request Match, and HTTP Path, click ``configure``
@@ -22,6 +26,29 @@ Disallow file types
       (.doc|.docx|.pdf|.exe|.bat)$
 
 .. note:: This will disallow doc, docx, pdf, exe and bat file types.
+
+|
+
+Allow HTTP Methods
+******************
+
+* In the same Service Policy created, create a new rule
+* Name it as you want ``method-allow``
+* In action, set ``Allow``
+* In Request Match, Configure ``HTTP Method``
+* Add ``GET`` and ``POST``
+* Save your rule.
+* You should see now 2 rules
+
+  * IP-Reputation rule
+  * Methods allowed rule
+
+|
+
+.. note:: You should have 2 rules in your Service Policy. Check the order.
+
+  .. image:: ../pictures/lab2/all-rules.png
+     :align: center
 
 |
 
@@ -40,28 +67,7 @@ Geoloc - disallow countries
 
 |
 
-Allow HTTP Methods
-******************
 
-* In the same Service Policy created in previous lab, create a new rule
-* Name it as you want ``method-allow``
-* In action, set ``Allow``
-* In Request Match, Configure ``HTTP Method``
-* Add ``GET`` and ``POST``
-* Save your rule.
-* You should see now 2 rules
-
-  * IP-Reputation rule
-  * Methods allowed rule
-
-|
-
-.. note:: You should have 3 rules in your Service Policy. Check the order.
-
-  .. image:: ../pictures/lab2/all-rules.png
-     :align: center
-
-|
 
 Assign your Service Policies to your HTTP LB
 ********************************************

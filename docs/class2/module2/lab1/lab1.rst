@@ -70,9 +70,14 @@ Check your analytics
 ********************
 
 * Now, go to your LB ``Security Analytics``
-* Go to ``Bot Traffic overview`` and check if you see a Human and Bot event logs
+* Go to ``Security Analytics`` and check if you see a Human and Bot event logs
 
   .. image:: ../pictures/lab1/analytics.png
+     :align: center
+
+* You can also see Bot Defense dashboard in ``Bot Defense`` section
+
+  .. image:: ../pictures/lab1/bot-defense.png
      :align: center
 
 
