@@ -11,9 +11,9 @@ The use case is simple:
 * The application will be available everywhere though all F5XC Regional Edge locations
 * We will apply a WAAP policy
 
-Today (Feb 2022), the worldwide POPs map is as below
+Today (May 2023), the worldwide POPs map is as below
 
-.. image:: ./pictures/map.png
+.. image:: ./pictures/map.jpeg
    :align: center
 
 **Module 1 - All sections**

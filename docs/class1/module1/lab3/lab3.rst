@@ -6,7 +6,6 @@ It is time to create your first WAAP policy and assign it on your HTTPS LB.
 Create a WAAP Policy
 ********************
 
-*  Check you are in your NameSpace
 *  Create a new WAAP policy and customize it with few settings (Menu App Firewall)
 
   .. image:: ../pictures/lab3/waap-config.png
@@ -76,7 +75,7 @@ Test you WAAP Policy
 Look at WAAP analytics in F5XC Console
 **************************************
 
-* In ``Apps & API`` menu, select your LB, and check ``Security Events``
+* In ``Overview > Dashboards > Security Dashboard`` menu, select your LB, and check ``Security Analytics``
 
 .. image:: ../pictures/lab3/analytics1.png
    :align: center
